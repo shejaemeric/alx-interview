@@ -12,8 +12,10 @@ def pascal_triangle(n):
 
     if n <= 0:
         return []
+    elif (n == 1):
+        return [[1],[1,1]]
     else:
-        results = []
+        results = [[1],[1,1]]
         pascal_list = [1, 1]
         for n in range(2, n):
             new_pascal_list = [1]
